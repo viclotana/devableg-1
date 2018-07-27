@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, 'devableg'),
+    AngularFirestoreModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule
