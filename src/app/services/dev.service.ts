@@ -10,9 +10,4 @@ export class DevService {
   constructor(public lax: AngularFirestore) { }
 }
 
-interface Dev {
-  name?:string;
-  twitter?:string;
-  github?:string;
-  stack?:string;
-}
+
