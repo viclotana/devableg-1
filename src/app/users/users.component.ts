@@ -26,19 +26,20 @@ from '@angular/animations'
   ]
 })
 export class UsersComponent implements OnInit {
-  
+  devs: Dev[];
   users$: object;
 
-  constructor(private dev: DevService, private data: DataService) { }
+  constructor(private devService: DevService, private data: DataService) { }
 
   ngOnInit() {
     this.data.getUsers().subscribe(
       data => this.users$ = data
     );
     //console.log('run run run');
-    this.dev.getDevelopers().subscribe(devs => {
-      console.log(devs);
-    })
+    this.devService.getDevelopers().subscribe(devs => {
+      //console.log(devs);
+      this.devs = devs;
+    });
   }
 
 }
