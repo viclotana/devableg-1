@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 })
 export class PostsComponent implements OnInit {
 
-  posts$: object;
 
   constructor(private data: DataService) { }
 
