@@ -12,6 +12,10 @@ export class DevService {
   constructor(public lax: AngularFirestore) { 
     this.devs = this.lax.collection('devs').valueChanges();
   }
+
+  getDevelopers(){
+    return this.devs;
+  }
 }
 
 
