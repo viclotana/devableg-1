@@ -11,7 +11,6 @@ import { PostsComponent } from './posts/posts.component';
 import { DetailsComponent } from './details/details.component';
 import { UsersComponent } from './users/users.component';
 
-
 //import { DevService } from './services/dev.service';
 @NgModule({
   declarations: [
