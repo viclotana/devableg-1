@@ -25,7 +25,7 @@ import { UsersComponent } from './users/users.component';
     AngularFireModule.initializeApp(environment.firebase, 'devableg'),
     AngularFirestoreModule,
     AppRoutingModule,
-    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
