@@ -32,8 +32,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
     this.data.getUsers().subscribe(
-      data => this.users$ = data
-    );
+     
     //console.log('run run run');
     this.devService.getDevelopers().subscribe(devs => {
       //console.log(devs);
