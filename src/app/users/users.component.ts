@@ -5,7 +5,6 @@ import { DevService } from '.././services/dev.service';
 import { Dev } from '../models/dev';
 // import { trigger,transition,query,style,stagger,animate,keyframes }
 // from '@angular/animations'
-
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
