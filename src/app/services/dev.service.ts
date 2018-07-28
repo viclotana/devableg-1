@@ -9,7 +9,9 @@ import { Observable } from '../../../node_modules/rxjs';
 export class DevService {
    devsCollection: AngularFirestoreCollection<Dev>;
    devs: Observable<Dev[]>;
-  constructor(public lax: AngularFirestore) { }
+  constructor(public lax: AngularFirestore) { 
+    this.devs = this.lax.collection('devs').valueChanges();
+  }
 }
 
 
