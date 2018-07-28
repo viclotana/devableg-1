@@ -15,7 +15,7 @@ import { UsersComponent } from './users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-import { DevService } from './services/dev.service';
+//import { DevService } from './services/dev.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,7 @@ import { DevService } from './services/dev.service';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [DevService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
