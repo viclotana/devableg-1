@@ -13,7 +13,6 @@ import { DetailsComponent } from './details/details.component';
 import { UsersComponent } from './users/users.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 //import { DevService } from './services/dev.service';
 @NgModule({
