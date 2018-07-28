@@ -27,7 +27,7 @@ import { Dev } from '../models/dev';
 })
 export class UsersComponent implements OnInit {
   devs: Dev[];
-  users$: object;
+  
 
   constructor(private devService: DevService, private data: DataService) { }
 
