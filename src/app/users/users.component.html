@@ -1,14 +1,11 @@
-<div **ngIf="devs?.length>0; else noDevelopers">
+<div *ngIf="devs?.length>0; else noDevelopers">
 <h1>Developers' List</h1>
-<ul [@listStagger]="devs">
-  <li *ngFor="let dev of devs">
-    <a routerLink="/details/{{user.id}}">{{user.name}}</a>
-    <ul>
-      <li>{{user.email}}</li>
-      <li><a href="http://{{user.website}}">{{user.website}}</a></li>
-    </ul>
-  </li>
+<ul [@listStagger]="devs"  *ngFor="let dev of devs">
+  <li>{{dev.name}}</li>
+  <li>{{dev.twitter}}</li>
+  <li>{{dev.github}}</li>
 </ul>
+
 </div>
 <ng-template #noDevelopers>
   <hr>
