@@ -12,7 +12,7 @@ export class DevService {
 
 interface Dev {
   name?:string;
-  twitter?:string
-  github?:string,
-  stack?:string
+  twitter?:string;
+  github?:string;
+  stack?:string;
 }
