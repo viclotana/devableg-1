@@ -34,7 +34,8 @@ export class UsersComponent implements OnInit {
     this.data.getUsers().subscribe(
       data => this.users$ = data
     );
-    console.log('run run run');
+    //console.log('run run run');
+    this
   }
 
 }
