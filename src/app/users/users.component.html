@@ -1,7 +1,7 @@
 <div *ngIf="devs?.length>0; else noDevelopers">
 <h1>Developers' List</h1>
 <ul [@listStagger]="devs"  *ngFor="let dev of devs">
-  <li><strong>{{dev.name}}:</strong>{{dev.twitter}}</li>
+  <li><strong>{{dev.name}}: </strong>{{dev.twitter}}</li>
 </ul>
 
 </div>
