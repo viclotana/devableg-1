@@ -6,7 +6,7 @@ import { Dev } from '../models/dev';
   providedIn: 'root'
 })
 export class DevService {
-   devsCollection: AngularFirestoreCollection<Dev>
+   devsCollection: AngularFirestoreCollection<Dev>;
 
   constructor(public lax: AngularFirestore) { }
 }
