@@ -12,7 +12,6 @@ import { PostsComponent } from './posts/posts.component';
 import { DetailsComponent } from './details/details.component';
 import { UsersComponent } from './users/users.component';
 
-import { HttpClientModule } from '@angular/common/http';
 
 //import { DevService } from './services/dev.service';
 @NgModule({
