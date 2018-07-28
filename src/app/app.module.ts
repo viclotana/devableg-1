@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFirestoreModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
