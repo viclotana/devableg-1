@@ -13,7 +13,7 @@ export class PostsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.data.getPosts().subscribe
+    this.data.getPos
   }
 
 }
