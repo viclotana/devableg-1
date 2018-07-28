@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
-import 
+import { DevService } from '.././services/dev.service';
 import { trigger,transition,query,style,stagger,animate,keyframes }
 from '@angular/animations'
 
@@ -28,12 +28,13 @@ export class UsersComponent implements OnInit {
   
   users$: object;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, dev: DevService) { }
 
   ngOnInit() {
     this.data.getUsers().subscribe(
       data => this.users$ = data
-    )
+    );
+    console.log('run run run');
   }
 
 }
