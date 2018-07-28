@@ -29,7 +29,6 @@ export class UsersComponent implements OnInit {
   constructor(private devService: DevService) { }
 
   ngOnInit() {
-    //console.log('run run run');
     this.devService.getDevelopers().subscribe(devs => {
       //console.log(devs);
       this.devs = devs;
